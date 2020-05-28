@@ -1,0 +1,126 @@
+* {
+      box-sizing: border-box;
+    margin: auto 0;
+    
+}
+
+/* NAVBAR */
+#navbar {
+    overflow: hidden;
+    background-color: #000;
+}
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2% 5% 2%;
+
+    text-decoration: none;
+    font-family: sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+#logo {
+    width: 250px;
+    float: left;
+    padding: 2% 5% 2%;
+}
+/* CONTENT */
+
+.content {
+    padding: 16px;
+}
+
+/* THIS CLASS IS IN JS */
+.sticky {
+ position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+.content img {
+    width: 30%;
+}
+.row {
+    padding-bottom: 50%;
+}
+.rowleft img {
+padding: 5%;
+}
+.rowleft p {
+    margin: -8%  0 0 20%;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    width: 40%
+    
+}
+.rowright {
+        position: absolute;
+
+}
+.rowright img {
+padding: 5%;
+    float: right;
+    
+}
+.rowright p {
+    margin: 20%  0 0 30%;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    width: 40%;
+    float: right;
+    
+}
+.footer {
+    background-color: #000;
+    height: 15%;
+    padding-top: 2%;
+      position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.footer img {
+    width: 150px;
+    padding: 10px 0 10px 35px;
+}
+.footer ul {
+      columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+    list-style: none;
+    color: white;
+}
+.footer li {
+    font-family: sans-serif;
+    padding: 0 1% 1% 0;
+    font-size: 14px
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+.column img {
+    padding-top: 20%;
+    width: 110%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
