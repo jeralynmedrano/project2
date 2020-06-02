@@ -201,3 +201,36 @@ font-weight: 500;
 font-style: normal;
     line-height: 1.25;
 }
+.pack-row img{
+    width: 60%;
+    
+}
+.mech {
+    margin-top: 25%;
+            font-family: sans-serif;
+font-weight: 500;
+font-style: normal;
+    line-height: 1.5;
+    font-size: 30px;
+}
+..mech-detail {
+    margin: 25% 25% 0 0;
+            font-family: sans-serif;
+font-weight: 500;
+font-style: normal;
+    line-height: 1.5;
+}
+.two-column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+    margin-top: 5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
