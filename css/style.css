@@ -8,6 +8,7 @@
 #navbar {
     overflow: hidden;
     background-color: #000;
+    z-index: 1;
 }
 #navbar a {
     float: right;
@@ -36,6 +37,7 @@ font-style: normal;
 
 .content {
     padding: 16px;
+    margin-top: 5%;
 }
 
 /* THIS CLASS IS IN JS */
@@ -76,22 +78,24 @@ padding: 5%;
 }
 .rowright {
         position: absolute;
+    margin-left: 10%;
 
 }
 .rowright img {
 padding: 5%;
     float: right;
+    z-index: -1;
     
 }
-
 .index-right {
-    margin: 17%  0 0 0;
-    padding-left: 5%;
+    margin: 17% 0 0 0;
+    padding-left: %;
     font-family: sans-serif;
     font-weight: 500;
     font-size: 18px;
     width: 40%;
     float: right;
+    z-index: 1;
     
 }
 .index-right a{
@@ -159,13 +163,15 @@ padding: 5%;
 }
 
 
-.packboth {
+.leftimg {
     margin: 10% 10% 10% 10%;
     width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  width: 200px;
+}
+.leftimg img {
+    width: 500px;
 }
 .color {
   position: relative;
@@ -209,7 +215,7 @@ padding: 5%;
 
 .text {
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -220,14 +226,24 @@ padding: 5%;
         font-family: sans-serif;
 font-weight: 500;
 font-style: normal;
-    line-height: 1.25;
+    line-height: 1.5;
 }
 .pack-row img{
     width: 60%;
     
 }
 .subtitle {
-    margin-top: 25%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+            font-family: sans-serif;
+font-weight: 500;
+font-style: normal;
+    line-height: 1.5;
+    font-size: 30px;
+}
+.subtitleingred {
+    margin-top: 10%;
+    margin-bottom: 5%;
             font-family: sans-serif;
 font-weight: 500;
 font-style: normal;
@@ -244,7 +260,9 @@ font-style: normal;
 .detail ul {
     list-style-type: none;
     line-height: 2;
-    margin-left: -7.25%
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 .two-column {
   float: left;
@@ -259,4 +277,7 @@ font-style: normal;
   content: "";
   display: table;
   clear: both;
+}
+.ingredient-column {
+  background-image: url("img/swatchnude.png");
 }
